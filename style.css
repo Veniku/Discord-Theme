@@ -41,6 +41,13 @@ h2 {
 	color: rgba(255,255,255,.8);
 	font-family: "lato";
 }
+h5 {
+	color: rgba(255,255,255,.5);
+	font-family: "lato";
+	margin-top: 8px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
 ul {
 	font-size: 16px;
 	color: rgba(255,255,255,.5);
