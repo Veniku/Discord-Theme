@@ -111,6 +111,10 @@ background-image: url(https://storage.googleapis.com/material-icons/external-ass
 .guild-channels .icon-settings {
 background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_settings_white_24px.svg);
 }
+.guild-channels .channel.selected .icon {
+    opacity: .8
+}
+
 
 
 /* invite */
@@ -550,6 +554,20 @@ background-image: url(https://storage.googleapis.com/material-icons/external-ass
     color: #e53232;
 }
 
+/*//////////////////*/
+/* voice connection */
+/*//////////////////*/
+#voice-connection {
+    background: #111;
+}
+
+/* acount bar */
+.account {
+    height: 70px;
+    background: #111;
+}
+
+
 
 /*////////////*/
 /* member tab */
@@ -565,4 +583,41 @@ background-image: url(https://storage.googleapis.com/material-icons/external-ass
 /* Server Tab */
 .guilds-wrapper .guilds .guild .badge {
     right: 12px;
+}
+
+
+/*/////////*/
+/* chatbar */
+/*/////////*/
+
+/* type bar */
+.flex-horizontal>.flex-spacer {
+    background: #111;
+}
+
+
+/* chat */
+.chat .messages {
+    margin: 0;
+    background: #111;
+}
+
+
+/* title bar */
+.theme-dark .chat .title-wrap {
+    border-bottom: 0px solid #1c1c1c;
+    box-shadow: 0 0px 0 rgba(0,0,0,.06);
+    background-color: #1c1c1c;
+}
+
+
+/* server bar */
+.guilds-wrapper .guilds {
+    background: #1c1c1c
+}
+.flex-horizontal>.flex-spacer {
+    box-shadow: inset 16px 0px 16px -16px rgba(0,0,0,0.8);
+}
+.chat .messages {
+    box-shadow: inset 16px 16px 16px -16px rgba(0,0,0,0.8);
 }
