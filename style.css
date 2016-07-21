@@ -4,6 +4,7 @@
     font-weight: 400;
     src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/v0SdcGFAl2aezM9Vq_aFTQ.ttf) format('truetype');
 }
+ { box-sizing: border-box; }
 @keyframes pulse {
     50% {
         color: white;
@@ -27,4 +28,12 @@ button {
 button:hover {
 	color: rgba(255,255,255,.8);
 	animation: pulse .38s infinite;
+}
+h2 {
+	color: rgba(255,255,255,.5);
+	font-family: "lato";
+}
+h3 {
+	color: rgba(255,255,255,.5);
+	font-family: "lato";
 }
