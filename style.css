@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/v0SdcGFAl2aezM9Vq_aFTQ.ttf) format('truetype');
+}
+@keyframes pulse {
+    50% {
+        color: white;
+    }
+}
+body {
+	background: #111;
+	color: #e53232;
+	font-family: "lato";
+	text-align: center;
+}
+button {
+	font-family: "lato";
+	font-size: 16px;
+	padding: 8px 16px;
+	border-radius: 2px;
+	color: rgba(255,255,255,.8);
+    border: 0px #1c1c1c;
+    background: #1c1c1c;
+}
+button:hover {
+	color: rgba(255,255,255,.8);
+	animation: pulse .38s infinite;
+}
