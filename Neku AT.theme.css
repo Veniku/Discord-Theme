@@ -14,6 +14,11 @@ body {
         color: white;
     }
 }
+@keyframes pulse-opacity {
+    50% {
+        opacity: 1;
+    }
+}
 a:hover,
 a:active,
 a:focus {
@@ -111,8 +116,12 @@ background-image: url(https://storage.googleapis.com/material-icons/external-ass
 .guild-channels .icon-settings {
 background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_settings_white_24px.svg);
 }
+.guild-channels .channel .icon:hover {
+    opacity: .2 !important;
+    animation: pulse-opacity .38s infinite;
+}
 .guild-channels .channel.selected .icon {
-    opacity: .8
+    opacity: .8 !important;
 }
 
 
