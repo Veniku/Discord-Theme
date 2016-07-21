@@ -4,7 +4,7 @@
     font-weight: 400;
     src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/v0SdcGFAl2aezM9Vq_aFTQ.ttf) format('truetype');
 }
- { box-sizing: border-box; }
+{ box-sizing: border-box; }
 @keyframes pulse {
     50% {
         color: white;
@@ -30,10 +30,27 @@ button:hover {
 	animation: pulse .38s infinite;
 }
 h2 {
+	color: rgba(255,255,255,.8);
+	font-family: "lato";
+}
+h4 {
 	color: rgba(255,255,255,.5);
 	font-family: "lato";
 }
-h3 {
+ .name { color: blue; }
+ul {
+	font-size: 16px;
 	color: rgba(255,255,255,.5);
-	font-family: "lato";
-}
+	line-height:20px;
+ 	margin: auto;
+ 	text-align: left;
+ 	max-width: 488px;
+ }
+ a:-webkit-any-link {
+ 	color: rgba(255,255,255,.8);
+ 	text-decoration: none;
+ }
+  a:-webkit-any-link:hover {
+ 	color: rgba(255,255,255,.8);
+ 	animation: pulse .38s infinite;
+ }
