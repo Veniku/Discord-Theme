@@ -24,6 +24,7 @@ button {
 	color: rgba(255,255,255,.8);
     border: 0px #1c1c1c;
     background: #1c1c1c;
+    outline: 0;
 }
 button:hover {
 	color: rgba(255,255,255,.8);
@@ -44,7 +45,7 @@ ul {
 	line-height:20px;
  	margin: auto;
  	text-align: left;
- 	max-width: 488px;
+ 	max-width: 414px;
  }
  a:-webkit-any-link {
  	color: rgba(255,255,255,.8);
