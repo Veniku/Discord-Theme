@@ -1,4 +1,4 @@
-//META{"name":"Neku AT Theme","description":"A Theme based of a site called twist.moe","author":"Neku","version":"0.0.1"}*//{}
+//META{"name":"Neku AT Theme","description":"A Theme based of a site called twist.moe","author":"Neku","version":"0.0.1"}*//{}
 @font-face {
     font-family: 'Lato';
     font-style: normal;
@@ -12,6 +12,11 @@ body {
 @keyframes pulse {
     50% {
         color: white;
+    }
+}
+@keyframes pulse-opacity {
+    50% {
+        opacity: 1;
     }
 }
 a:hover,
@@ -106,13 +111,27 @@ a:focus {
     box-shadow: 0 0px 0 rgba(0,0,0,.25),inset 0 0px 0 hsla(0,0%,100%,.15);
 }
 .guild-channels .icon-instant-invite {
-background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_share_white_24px.svg);
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_share_white_24px.svg);
 }
 .guild-channels .icon-settings {
-background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_settings_white_24px.svg);
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_settings_white_24px.svg);
+}
+.guild-channels .channel:hover .icon {
+    opacity: .5;
+}
+.guild-channels .channel .icon:hover {
+    opacity: .5 !important;
+    animation: pulse-opacity .38s infinite;
 }
 .guild-channels .channel.selected .icon {
-    opacity: .8
+    opacity: .8 !important;
+}
+.guild-channels header button:after {
+    opacity: .8 !important;
+}
+.guild-channels header button:hover:after {
+    opacity: .8 !important;
+    animation: pulse-opacity .38s infinite;
 }
 
 
