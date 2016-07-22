@@ -1,4 +1,4 @@
-//META{"name":"Neku AT Theme","description":"A Theme based of a site called twist.moe","author":"Neku","version":"0.0.1"}*//{}
+//META{"name":"Neku AT Theme","description":"A Theme based of a site called twist.moe","author":"Neku","version":"0.0.1"}*//{}
 @font-face {
     font-family: 'Lato';
     font-style: normal;
@@ -207,6 +207,13 @@ a:focus {
 .clipboard-input-inner button {
     border-left: 1px solid #1c1c1c;
     background-color: #1c1c1c;
+}
+.clipboard-input-inner button.copy:hover {
+    animation: pulse-opacity .38s infinite;
+}
+.clipboard-input-inner button.copy {
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_content_copy_white_24px.svg);
+    opacity: .8;
 }
 
 
