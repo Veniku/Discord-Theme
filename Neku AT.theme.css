@@ -696,3 +696,32 @@ a:focus {
 .chat .messages {
     box-shadow: inset 16px 16px 16px -16px rgba(0, 0, 0, 0.8);
 }
+/* friend bar */
+
+.private-channels .scroller {
+    background: #111;
+}
+.search-bar {
+    background-color: #1c1c1c;
+}
+.search-bar input {
+    background: #1c1c1c;
+    border: 0px solid rgba(0, 0, 0, .1);
+}
+/* friend aera */
+
+.theme-dark #friends .friends-header {
+    background-color: #1c1c1c;
+    border-bottom: 1px solid #1c1c1c;
+}
+.theme-dark #friends {
+    background-color: #111;
+}
+.theme-dark #friends .friends-table .friends-table-header {
+    background: #111;
+    border-bottom: 0px solid hsla(0, 0%, 100%, .1);
+}
+#friends .friends-table .friends-table-body {
+    background: #111;
+    box-shadow: inset 16px 16px 16px -16px rgba(0, 0, 0, 0.8);
+}
