@@ -661,6 +661,7 @@ a:focus {
 .theme-dark .chat form {
     background: #1c1c1c;
     border-top: 0px solid hsla(0, 0%, 100%, .06);
+    box-shadow: inset 16px 0px 16px -16px rgba(0, 0, 0, .8);
 }
 .chat form {
     margin: 0 0px;
