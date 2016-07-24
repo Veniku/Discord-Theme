@@ -786,3 +786,11 @@ textarea.has-results .channel-textarea-inner {
     margin: 6px 6px 6px 19px;
     display: none; !important;
 }
+
+/*TEMP OPTIONS BAR FIX*/
+.tab-bar.TOP .tab-bar-item {
+    color: #87909c;
+}
+.tab-bar.TOP .tab-bar-item:hover {
+    color: #87909c;
+}
