@@ -773,3 +773,16 @@ textarea.has-results .channel-textarea-inner {
     background: #111;
     box-shadow: inset 16px 16px 16px -16px rgba(0, 0, 0, 0.8);
 }
+/* hide blocked messages */
+.message-group-blocked {
+    background: #fcfcfc;
+    -webkit-box-pack: center;
+    -o-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    border: 1px solid #e3e5e7;
+    border-radius: 3px;
+    margin: 6px 6px 6px 19px;
+    display: none; !important;
+}
