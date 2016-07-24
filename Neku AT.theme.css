@@ -459,7 +459,7 @@ a:focus {
     margin-left: 3px;
 }
 #user-profile-modal .avatar-profile .status {
-    box-shadow: inset 0 0 0 0px #1c1c1c;
+box-shadow: inset 0 0 0 0px #1c1c1c;
     border: 4px solid #1c1c1c;
 }
 .tab-bar.TOP .tab-bar-item {
@@ -634,6 +634,14 @@ a:focus {
     background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_mic_off_white_24px.svg) !important;
     opacity: .2;
 }
+.account .btn-mute:after {
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_mic_white_24px.svg) !important;
+    opacity: 0.2!important;
+    zoom: 1.2;
+}
+.icon-deafened, .account .btn-deafen.disabled:after {
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_volume_off_white_24px.svg) !important;
+}
 /*////////////*/
 /* member tab */
 /*////////////*/
@@ -652,9 +660,6 @@ a:focus {
 /*/////////*/
 /* type bar */
 
-.flex-horizontal>.flex-spacer {
-    background: #111;
-}
 .theme-dark .channel-textarea-inner {
     border-color: #1c1c1c;
     background-color: #1c1c1c;
@@ -675,6 +680,48 @@ a:focus {
 .theme-dark .chat form .typing {
     background-color: #111;
     margin-left: 20px;
+}
+.channel-textarea-inner .channel-textarea-upload {
+    border-radius: 7px !important;
+    color: #fff !important;
+    border-right-color: rgba(0, 0, 0, 0) !important;
+    padding: 3px !important;
+    opacity: 0.17;
+    background-size: 18px !important;
+    transform: scale(1.2) !important;
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_file_upload_white_24px.svg);
+    transition: all 100ms ease !important;
+}
+.theme-dark .channel-textarea-upload:hover {
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_file_upload_white_24px.svg);
+    background-color: hsla(0,0%,100%,.06);
+}
+.theme-dark .channel-
+textarea.has-results .channel-textarea-inner {
+    border-color: rgba(0,0,0,0);
+}
+.theme-dark .channel-textarea-autocomplete-inner {
+    background-color: #1c1c1c;
+    border-color: #1c1c1c;
+}
+.theme-dark .channel-textarea-autocomplete-inner header {
+    border-bottom-color: #1c1c1c;
+    background-color: #1c1c1c;
+    color: #e53232;
+}
+.theme-dark .channel-textarea-autocomplete-inner ul li.active {
+    background: #1c1c1c;
+    animation: pulse .38s infinite;
+    border-left: 2px solid #e53232;
+}
+.channel-textarea-autocomplete-inner ul li.active {
+    padding-left: 8px;
+}
+.theme-dark .channel-textarea-autocomplete-inner ul li {
+    color: rgba(255,255,255,.8);
+}
+.theme-dark .channel-textarea-autocomplete-inner:after {
+    border-bottom: #fff;
 }
 /* chat */
 
