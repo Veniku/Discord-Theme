@@ -1,4 +1,4 @@
-//META{"name":"Neku AT Theme","description":"A Theme based of a site called twist.moe","author":"Neku","version":"0.0.1"}*//{}
+//META{"name":"Neku AT Theme","description":"A Theme based off a site called twist.moe","author":"Neku","version":"0.0.1"}*//{}
 @font-face {
     font-family: 'Lato';
     font-style: normal;
@@ -635,7 +635,6 @@ a:focus {
 /*////////////*/
 /* member tab */
 /*////////////*/
-
 .theme-dark .channel-members {
     background-color: #111;
     box-shadow: 0 0 16px rgba(0, 0, 0, .8);
@@ -659,7 +658,7 @@ a:focus {
     background-color: #1c1c1c;
 }
 .theme-dark .chat form {
-    background: #1c1c1c;
+    background: #111;
     border-top: 0px solid hsla(0, 0%, 100%, .06);
     box-shadow: inset 16px 0px 16px -16px rgba(0, 0, 0, .8);
 }
@@ -672,7 +671,7 @@ a:focus {
     margin: 20px 0 20px;
 }
 .theme-dark .chat form .typing {
-    background-color: #1c1c1c;
+    background-color: #111;
     margin-left: 20px;
 }
 /* chat */
