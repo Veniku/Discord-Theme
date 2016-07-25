@@ -649,6 +649,12 @@ box-shadow: inset 0 0 0 0px #1c1c1c;
     background-color: #111;
     box-shadow: 0 0 16px rgba(0, 0, 0, .8);
 }
+.theme-dark .channel-members h2 {
+    color: rgba(255,255,255,.8);
+}
+.channel-members .member .member-activity {
+    color: rgba(255,255,255,.5);
+}
 /* notification settings */
 /* Server Tab */
 
@@ -728,6 +734,108 @@ textarea.has-results .channel-textarea-inner {
 .chat .messages {
     background: #111;
 }
+.chat .empty-message h1 {
+    font-weight: 500;
+    color: rgba(255,255,255,.5);
+}
+.theme-dark .message-group h2 span {
+    color: rgba(255,255,255,.5);
+}
+.theme-dark .message-group .comment .markup {
+    color: rgba(255,255,255,.8);
+}
+.theme-dark .messages-wrapper .messages .divider span {
+    background-color: #111;
+}
+.theme-dark .messages-wrapper .messages .divider:not(.red) span {
+    opacity: 1;
+}
+.chat .divider>span {
+    color: rgba(255,255,255,.5);
+    font-weight: 500;
+}
+.theme-dark .messages-wrapper .messages .divider:not(.red) div {
+    background: rgba(255,255,255,.05);
+}
+.mentioned .highlight {
+    color: #e53232;
+    font-weight: 500;
+}
+.mentioned .highlight:hover {
+    color: #e53232;
+    animation: pulse .38s infinite;
+}
+.highlight {
+    color: #e53232;
+    font-weight: 500;
+}
+.theme-dark .message-group .comment .markup .highlight:hover {
+    background-color: transparent;
+}
+.highlight:hover {
+    color: #e53232;
+    animation: pulse .38s infinite;
+}
+.theme-dark .message-group .comment .markup .highlight {
+    background-color: transparent;
+}
+.theme-dark .message-group .mentioned .message-text {
+    background: #111;
+}
+.message-group .mentioned .message-text:after {
+    background: #1c1c1c;
+    border-left: 4px solid #e53232;
+}
+.chat .new-messages-bar {
+    background-color: #111;
+}
+.chat .new-messages-bar:hover {
+    background-color: #1c1c1c;
+}
+.chat .new-messages-bar button {
+    color: rgba(255,255,255,.5);
+    font-weight: 500;
+    font-family: lato;
+}
+.chat .new-messages-bar button:last-child {
+    color: rgba(255,255,255,.8);
+}
+.chat .new-messages-bar button:last-child:hover {
+    color: rgba(255,255,255,.8);
+    animation: pulse .38s infinite;
+}
+.theme-dark .message-group:not(.has-divider) {
+    border-bottom-color: rgba(255,255,255,.05);
+}
+.theme-dark .message-group .comment .markup pre code {
+    background: #1c1c1c;
+}
+.theme-dark .message-group .comment .markup pre {
+    border-color: #1c1c1c;
+}
+.theme-dark .hljs {
+    color: rgba(255,255,255,.8);
+}
+.theme-dark .invite-button {
+    background-color: #1c1c1c;
+    border-color: #1c1c1c;
+}
+.theme-dark .invite-button .invite-button-header {
+    color: rgba(255,255,255,.8);
+}
+code {
+    font-family: lato;
+}
+.message-group .comment .markup code.inline {
+    font-family: lato;
+}
+.theme-dark .message-group .comment .markup code.inline {
+    background: #1c1c1c;
+}
+.theme-dark .message-group a {
+    color: #e53232;
+}
+
 /* title bar */
 
 .theme-dark .chat .title-wrap {
@@ -736,6 +844,22 @@ textarea.has-results .channel-textarea-inner {
     background-color: #1c1c1c;
     z-index: 1;
 }
+.chat>.title-wrap>.title .channel-name:before {
+    display: none;
+}
+.theme-dark .chat .title-wrap .topic:before {
+    display: none;
+}
+.theme-dark .chat .title-wrap .channel-name {
+    color: rgba(255,255,255,.8);
+}
+.theme-dark .chat .title-wrap .topic {
+    color: rgba(255,255,255,.5);
+}
+.chat>.title-wrap>.topic {
+    font-weight: 500;
+}
+
 /* server bar */
 
 .guilds-wrapper .guilds {
