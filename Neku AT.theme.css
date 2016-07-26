@@ -146,12 +146,13 @@ a:focus {
 
 .instant-invite-popout {
     box-shadow: 0 0 16px rgba(0, 0, 0, .8);
+    background: #111;
 }
 .popout header {
     background-color: #111;
     padding: 13px;
     color: rgba(255, 255, 255, .8);
-    margin-bottom: -12px;
+    margin-bottom: 0px;
     font-weight: 500;
 }
 .popout header:before {
@@ -219,10 +220,135 @@ a:focus {
     background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_content_copy_white_24px.svg);
 }
 .clipboard-input-inner button:hover:after {
-    animation: pulse-opacity .38s infinite;
+    animation: pulse .38s infinite;
 }
 .instant-invite .clipboard-input-copied button.copy:after {
     visibility: hidden;
+}
+/* advanced settings */
+.form .control-group label {
+    font-weight: 500;
+    color: rgba(255,255,255,.5);
+}
+.Select-control {
+    background-color: #1c1c1c;
+}
+.form .Select-control {
+    border: 1px solid #1c1c1c;
+}
+.has-value>.Select-control>.Select-placeholder {
+    color: rgba(255,255,255,.8);
+}
+.form .Select-control * {
+    font-family: lato;
+}
+.Select-arrow {
+    border-color: rgba(255,255,255,.8) transparent transparent;
+}
+.form .Select-control:hover {
+    border-color: #1c1c1c;
+}
+.Select-arrow-zone:hover>.Select-arrow {
+    border-top-color: rgba(255,255,255,.8);
+    animation: pulse .38s infinite;
+}
+.form .is-focused:not(.is-open)>.Select-control {
+    border: 1px solid #1c1c1c;
+}
+form .Select.is-open .Select-control:hover {
+    border-color: #1c1c1c;
+}
+.Select-menu-outer {
+    background-color: #1c1c1c;
+    border: 1px solid #1c1c1c;
+    border-top-color: #1c1c1c;
+}
+.form .Select-option {
+    color: rgba(255,255,255,.8);
+}
+.form .Select-option.is-focused {
+    background: #1c1c1c;
+    color: rgba(255,255,255,.8);
+    animation: pulse .38s infinite;
+}
+.is-open>.Select-control {
+    background: #1c1c1c;
+}
+.form .Select.is-open .Select-control:hover {
+    border-color: #1c1c1c;
+}
+.is-open .Select-arrow {
+    border-top-color: rgba(255,255,255,.8);
+}
+.instant-invite-popout form .checkbox .checkbox-inner span {
+    background-color: #1c1c1c;
+    border-color: #1c1c1c;
+}
+.checkbox .checkbox-inner+span {
+    color: rgba(255,255,255,.5);
+}
+.checkbox .checkbox-inner input[type=checkbox]:checked+span {
+    background-color: #1c1c1c;
+    border-color: #1c1c1c;
+}
+.btn-help {
+    background: #111;
+    color: rgba(255,255,255,.8);
+}
+.btn-help:hover {
+    background: #111;
+    animation: pulse .38s infinite;
+}
+.form .btn-primary {
+    background-color: #e63c3c;
+    color: rgba(255,255,255,.8);
+}
+.form .btn-primary:hover {
+    background-color: #e63c3c;
+    animation: pulse .38s infinite;
+}
+/* channel settings */
+.settings .settings-header {
+    background-color: #1c1c1c;
+    font-family: "lato";
+}
+.tab-bar.SIDE .tab-bar-header {
+    font-weight: 700;
+    color: #e53232;
+    box-shadow: 0 0px 0 rgba(0,0,0,.05),inset 0 0px 0 rgba(0,0,0,.1);
+}
+.tab-bar.SIDE .tab-bar-item {
+    color: rgba(255,255,255,.5);
+}
+.tab-bar.SIDE .tab-bar-item:hover {
+    color: rgba(255,255,255,.5);
+    animation: pulse .38s infinite;
+}
+.tab-bar.SIDE .tab-bar-item.selected{
+    color: rgba(255,255,255,.8);
+}
+.tab-bar.SIDE .tab-bar-item.selected:hover {
+    color: rgba(255,255,255,.8);
+    animation: pulse .38s infinite;
+}
+.tab-bar.SIDE .tab-bar-item:before {
+    border-left: 4px solid #e53232;
+}
+.settings .settings-inner {
+    background-color: #111;
+}
+.form .control-group input[type=text]:focus {
+    border-bottom: 2px solid #e53232;
+}
+.form .control-group input[type=text] {
+    color: rgba(255,255,255,.8);
+}
+.settings .settings-actions {
+    background-color: #111;
+    border-top: 1px solid #111;
+}
+.tab-bar.SIDE {
+    margin-right: -17px;
 }
 /* Voice Channels */
 
@@ -908,5 +1034,5 @@ code {
     border: 1px solid #e3e5e7;
     border-radius: 3px;
     margin: 6px 6px 6px 19px;
-    display: none; !important;
+    display: none !important;
 }
