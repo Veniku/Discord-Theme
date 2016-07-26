@@ -5,9 +5,17 @@
     font-weight: 400;
     src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/v0SdcGFAl2aezM9Vq_aFTQ.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Mono'), local('RobotoMono-Regular'), url(https://fonts.gstatic.com/s/robotomono/v4/hMqPNLsu_dywMa4C_DEpY44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
 body {
     font-family: "Lato";
 }
+
 @keyframes pulse {
     50% {
         color: white;
@@ -340,7 +348,7 @@ form .Select.is-open .Select-control:hover {
     background-color: #111;
 }
 .form .control-group input[type=text]:focus {
-    border-bottom: 2px solid #e53232;
+    border-bottom: 2px solid #1c1c1c;
 }
 .form .control-group input[type=text] {
     color: rgba(255, 255, 255, .8);
@@ -356,11 +364,14 @@ form .Select.is-open .Select-control:hover {
     margin-top: 12px;
     background: #1c1c1c;
     border-radius: 2px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 .form .control-group input[type=password], .form .control-group input[type=text], .form .control-group textarea {
     background: #1c1c1c;
     border-bottom: 1px solid #1c1c1c;
-    border-radius: 2px; 
+    border-radius: 3px;
+    padding-left: 8px; 
 }
 .btn-confirm .icon.icon-delete {
     background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_delete_forever_white_24px.svg) !important;
@@ -1005,7 +1016,7 @@ form .Select.is-open .Select-control:hover {
     color: rgba(255, 255, 255, .8);
 }
 code {
-    font-family: lato;
+    font-family: "Roboto Mono";
 }
 .message-group .comment .markup code.inline {
     font-family: lato;
