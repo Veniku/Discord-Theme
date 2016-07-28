@@ -15,7 +15,11 @@
 body {
     font-family: "Lato";
 }
-
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
 @keyframes pulse {
     50% {
         color: white;
@@ -163,14 +167,8 @@ a:focus {
     margin-bottom: 0px;
     font-weight: 500;
 }
-.popout header:before {
-    display: none;
-}
 .popout section {
     background-color: #111;
-}
-.popout p {
-    display: none;
 }
 .instant-invite-popout section {
     padding-top: 0px;
@@ -377,7 +375,7 @@ form .Select.is-open .Select-control:hover {
     background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_delete_forever_white_24px.svg) !important;
 }
 .form .control-group textarea:focus {
-    border-bottom: 2px solid #e53232;
+    border-bottom: 2px solid #1c1c1c;
 }
 .form .control-group textarea {
     color: RGBA(255, 255, 255, .8);
@@ -414,6 +412,55 @@ form .Select.is-open .Select-control:hover {
 }
 .instant-invites .instant-invite-buttons .btn.btn-danger:hover {
     background: #1c1c1c;
+}
+#settings-roles h1 {
+    color: #e53232;
+    font-family: "lato";
+    text-transform: uppercase;
+}
+#settings-roles .roles li.selected {
+    background: #111;
+}
+#settings-roles .roles li {
+    font-weight: 500;
+    color: rgba(255,255,255,.5);
+}
+#settings-roles .roles li.selected:before {
+    color: #e53232;
+    background-color: #e53232;
+    margin-left: -1px;
+}
+#settings-roles .roles header {
+    border-bottom: 1px solid rgba(255,255,255,.0);
+    opacity: 1;
+    margin-bottom: -5px;
+}
+#settings-roles .roles li:hover {
+    background: #111;
+    animation: pulse .38s infinite;
+}
+#settings-roles .roles li:hover:before {
+    background-color: #111;
+}
+#settings-roles .roles {
+    border-right: 1px solid rgba(255,255,255,.0);
+}
+#permissions ul li {
+    color: rgba(255,255,255,.8);
+}
+#permissions ul li:hover {
+    color: rgba(255,255,255,.8);
+    animation: pulse .38s infinite;
+}
+#permissions .permission-actions>div {
+    background-color: #1c1c1c;
+    border: 2px solid #1c1c1c;
+}
+#permissions .permissions-helpdesk {
+    color: rgba(255,255,255,.5);
+}
+#permissions .permissions-helpdesk:hover {
+    color: rgba(255,255,255,.5);
 }
 /* Voice Channels */
 
@@ -815,6 +862,10 @@ form .Select.is-open .Select-control:hover {
     background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_settings_white_24px.svg) !important;
     zoom: 1.2;
 }
+.account .btn-settings:hover {
+    transform-origin: 51% 51%;
+    animation: spin 4s linear infinite;
+}
 .account .btn-deafen:after {
     background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_volume_up_white_24px.svg) !important;
     zoom: 1.2;
@@ -1019,7 +1070,7 @@ code {
     font-family: "Roboto Mono";
 }
 .message-group .comment .markup code.inline {
-    font-family: lato;
+    font-family: "roboto mono";
 }
 .theme-dark .message-group .comment .markup code.inline {
     background: #1c1c1c;
