@@ -852,7 +852,7 @@ form .Select.is-open .Select-control:hover {
     border-right: 0px solid #1c1e22;
 }
 .account .btn {
-    background: #111;
+    background: none !important;
 }
 .account .btn-deafen,
 .account .btn-settings {
