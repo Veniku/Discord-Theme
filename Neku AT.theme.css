@@ -852,7 +852,7 @@ form .Select.is-open .Select-control:hover {
     border-right: 0px solid #1c1e22;
 }
 .account .btn {
-    background: #111;
+    background: none !important;
 }
 .account .btn-deafen,
 .account .btn-settings {
@@ -1150,5 +1150,18 @@ code {
     border: 1px solid #e3e5e7;
     border-radius: 3px;
     margin: 6px 6px 6px 19px;
+<<<<<<< HEAD
+    display: none; !important;
+}
+
+/*TEMP OPTIONS BAR FIX*/
+.tab-bar.TOP .tab-bar-item {
+    color: #87909c;
+}
+.tab-bar.TOP .tab-bar-item:hover {
+    color: #87909c;
+}
+=======
     display: none !important;
 }
+>>>>>>> refs/remotes/NekuNeku/master
