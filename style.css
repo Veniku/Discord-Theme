@@ -27,8 +27,19 @@ body {
 .left {
 	float: left;
 }
+@media screen and (min-width: 492px) {
+.left {
+    float: center;
+}
+
+}
 .right {
 	float: right;
+}
+@media screen and (min-width: 492px) {
+.right {
+    float: center;
+}
 }
 
 button {
@@ -92,16 +103,6 @@ ul {
  	width: 100%;
  	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
  }
- @media screen and (min-width: 492px) {
- .left {
-    float: center;
- }
-}
- @media screen and (min-width: 492px) {
- .right {
-    float: center;
- }
-}
 
 =======
 	color: rgba(255, 255, 255, .5);
