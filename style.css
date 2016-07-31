@@ -1,56 +1,76 @@
-@font-face {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/v0SdcGFAl2aezM9Vq_aFTQ.ttf) format('truetype');
-}
+/*Fonts*/
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+/*Scrollbar*/
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: #111; }
 ::-webkit-scrollbar-thumb { background-color: rgba(255, 255, 255, .8); }
-{ box-sizing: border-box; }
+
+/*Animation*/
 @keyframes pulse {
-    50% {
-        color: white;
-    }
+	50% {
+		color: white;
+		fill: white;
+	}
 }
+
+/*Document*/
 body {
 	background: #111;
 	color: #e53232;
-	font-family: "lato";
+	font-family: "Lato", sans-serif;
 	text-align: center;
 	max-width: 960px;
 	margin: auto;
 }
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
 button {
 	margin: 4px;
 	margin-bottom: 8px;
-	font-family: "lato";
+	font-family: "Lato", sans-serif;
 	font-size: 16px;
+	width: 110px;
 	padding: 8px 16px;
 	border-radius: 2px;
-	color: rgba(255,255,255,.8);
-    border: 0px #1c1c1c;
-    background: #1c1c1c;
-    outline: 0;
-    cursor: pointer;
+	color: rgba(255, 255, 255, .8);
+	border: 0;
+	background: #1c1c1c;
+	outline: 0;
+	cursor: pointer;
 }
 button:hover {
-	color: rgba(255,255,255,.8);
 	animation: pulse .38s infinite;
 }
+
+.icon {
+	fill: rgba(255, 255, 255, .8);
+	font-size: 0;
+	width: auto;
+}
+.icon svg {
+	width: 24px;
+	height: 24px;
+}
+
 h2 {
-	color: rgba(255,255,255,.8);
-	font-family: "lato";
+	color: rgba(255, 255, 255, .8);
 }
 h5 {
-	color: rgba(255,255,255,.5);
-	font-family: "lato";
-	margin-top: 8px;
-    margin-bottom: 16px;
-    font-weight: 500;
+	color: rgba(255, 255, 255, .5);
+	margin: 0;
+	font-weight: normal;
 }
+
 ul {
 	font-size: 16px;
+<<<<<<< HEAD
 	color: rgba(255,255,255,.5);
 	line-height:20px;
  	margin: auto;
@@ -83,3 +103,54 @@ ul {
  }
 }
 
+=======
+	color: rgba(255, 255, 255, .5);
+	line-height: 20px;
+	margin: auto;
+	text-align: left;
+	max-width: 411px;
+	padding-bottom: 16px;
+}
+
+a {
+	color: rgba(255, 255, 255, .8);
+	text-decoration: none;
+}
+a:hover {
+	animation: pulse .38s infinite;
+}
+
+img {
+	margin: auto;
+	max-width: 960px;
+	width: 100%;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .25);
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity .3s;
+}
+#overlay.show {
+	opacity: 1;
+	pointer-events: all;
+}
+#customize {
+	background: #111;
+	max-width: 500px;
+	max-height: 300px;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+>>>>>>> gh-pages
