@@ -27,18 +27,18 @@ body {
 .left {
 	float: left;
 }
-@media screen and (min-width: 492px) {
+@media screen and (max-width: 491px) {
 .left {
-    float: center;
+    float: none;
+}
 }
 
-}
 .right {
 	float: right;
 }
-@media screen and (min-width: 492px) {
+@media screen and (max-width: 491px) {
 .right {
-    float: center;
+    float: none;
 }
 }
 
@@ -78,10 +78,8 @@ h5 {
 	margin: 0;
 	font-weight: normal;
 }
-
 ul {
 	font-size: 16px;
-<<<<<<< HEAD
 	color: rgba(255,255,255,.5);
 	line-height:20px;
  	margin: auto;
@@ -89,6 +87,7 @@ ul {
  	max-width: 411px;
  	padding-bottom: 16px;
  }
+ <<<<<<< HEAD
  a:-webkit-any-link {
  	color: rgba(255,255,255,.8);
  	text-decoration: none;
@@ -105,6 +104,8 @@ ul {
  }
 
 =======
+ul {
+    font-size: 16px;
 	color: rgba(255, 255, 255, .5);
 	line-height: 20px;
 	margin: auto;
