@@ -1,33 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="viewport" content="width=device-width, initial-scale=1"></head>
-<title>Neku's Site</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Neku's Site</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<h1>Neku's Discord Theme [WIP]</h1>
-<a href="https://userstyles.org/styles/130542/neku-s-discord-theme-wip">
-<button>Browser Version</button></a>
-<a href="https://raw.githubusercontent.com/NekuNeku/Discord-Theme/master/Neku%20AT.theme.css" download>
-<button>Download</button></a>
-<a href="https://github.com/NekuNeku/Discord-Theme">
-<button>Github</button></a>
-<a href="https://discord.gg/35xeJDB	">
-<button>Discord Server</button></a>
-<h5>The Discord server is the main way to give feature requests/feedback</h5>
-<a href="http://i.imgur.com/LlyrpOn.png">
-<img src="http://i.imgur.com/LlyrpOn.png"></a>
-<h2>How to install on Discord Client</h2>
-<ul>
-<li>Make sure you have BetterDiscord installed <a href="http://betterdiscord.net">BetterDiscord</a>.</li>
-<li>Download the theme via the Download button above.</li>
-<li>In Discord, go into the User Settings.</li>
-<li>On the left, click on the "BetterDiscord" tab.</li>
-<li>On the top, click on the "themes" tab.</li>
-<li>Click on "Open themes folder".</li>
-<li>Paste the .css file you downloaded in that folder.</li>
-<li>Restart BetterDiscord</li>
-<li>Go back to the "themes" menu and select "Enable"</li>
-</ul>
+	<h1>Neku's Discord Theme [WIP]</h1>
+	<div class="left">
+		<a href="https://raw.githubusercontent.com/NekuNeku/Discord-Theme/master/Neku%20AT.theme.css" download>
+			<button>Download</button>
+		</a>
+		<a href="https://userstyles.org/styles/130542/neku-s-discord-theme-wip">
+			<button>Browser</button>
+		</a>
+		<a>
+			<button id="open">Customize</button>
+		</a>
+	</div>
+	<div class="right">
+		<a href="https://github.com/NekuNeku/Discord-Theme">
+			<button class="icon">
+				<svg viewBox="0 0 24 24">
+					<path d="M4,2H20A2,2 0 0,1 22,4V20A2,2 0 0,1 20,22H14.85C14.5,21.92 14.5,21.24 14.5,21V18.26C14.5,17.33 14.17,16.72 13.81,16.41C16.04,16.16 18.38,15.32 18.38,11.5C18.38,10.39 18,9.5 17.35,8.79C17.45,8.54 17.8,7.5 17.25,6.15C17.25,6.15 16.41,5.88 14.5,7.17C13.71,6.95 12.85,6.84 12,6.84C11.15,6.84 10.29,6.95 9.5,7.17C7.59,5.88 6.75,6.15 6.75,6.15C6.2,7.5 6.55,8.54 6.65,8.79C6,9.5 5.62,10.39 5.62,11.5C5.62,15.31 7.95,16.17 10.17,16.42C9.89,16.67 9.63,17.11 9.54,17.76C8.97,18 7.5,18.45 6.63,16.93C6.63,16.93 6.1,15.97 5.1,15.9C5.1,15.9 4.12,15.88 5,16.5C5,16.5 5.68,16.81 6.14,17.97C6.14,17.97 6.73,19.91 9.5,19.31V21C9.5,21.24 9.5,21.92 9.14,22H4A2,2 0 0,1 2,20V4A2,2 0 0,1 4,2Z" />
+				</svg>
+			</button>
+		</a>
+		<a href="https://discord.gg/35xeJDB	">
+			<button class="icon">
+				<svg viewBox="0 0 24 24">
+					<path d="M22,24L16.75,19L17.38,21H4.5A2.5,2.5 0 0,1 2,18.5V3.5A2.5,2.5 0 0,1 4.5,1H19.5A2.5,2.5 0 0,1 22,3.5V24M12,6.8C9.32,6.8 7.44,7.95 7.44,7.95C8.47,7.03 10.27,6.5 10.27,6.5L10.1,6.33C8.41,6.36 6.88,7.53 6.88,7.53C5.16,11.12 5.27,14.22 5.27,14.22C6.67,16.03 8.75,15.9 8.75,15.9L9.46,15C8.21,14.73 7.42,13.62 7.42,13.62C7.42,13.62 9.3,14.9 12,14.9C14.7,14.9 16.58,13.62 16.58,13.62C16.58,13.62 15.79,14.73 14.54,15L15.25,15.9C15.25,15.9 17.33,16.03 18.73,14.22C18.73,14.22 18.84,11.12 17.12,7.53C17.12,7.53 15.59,6.36 13.9,6.33L13.73,6.5C13.73,6.5 15.53,7.03 16.56,7.95C16.56,7.95 14.68,6.8 12,6.8M9.93,10.59C10.58,10.59 11.11,11.16 11.1,11.86C11.1,12.55 10.58,13.13 9.93,13.13C9.29,13.13 8.77,12.55 8.77,11.86C8.77,11.16 9.28,10.59 9.93,10.59M14.1,10.59C14.75,10.59 15.27,11.16 15.27,11.86C15.27,12.55 14.75,13.13 14.1,13.13C13.46,13.13 12.94,12.55 12.94,11.86C12.94,11.16 13.45,10.59 14.1,10.59Z" />
+				</svg>
+			</button>
+		</a>
+	</div>
+	<a href="http://i.imgur.com/LlyrpOn.png">
+		<img src="http://i.imgur.com/LlyrpOn.png">
+	</a>
+	<h5>Use the Discord server to give feature requests and feedback</h5>
+	<h2>How to install on Discord Client</h2>
+	<ul>
+		<li>Make sure you have BetterDiscord installed <a href="http://betterdiscord.net">BetterDiscord</a>.</li>
+		<li>Download the theme via the Download button above.</li>
+		<li>In Discord, go into the User Settings.</li>
+		<li>On the left, click on the "BetterDiscord" tab.</li>
+		<li>On the top, click on the "themes" tab.</li>
+		<li>Click on "Open themes folder".</li>
+		<li>Paste the .css file you downloaded in that folder.</li>
+		<li>Restart BetterDiscord.</li>
+		<li>Go back to the "themes" menu and select "Enable".</li>
+	</ul>
+	<div id="overlay">
+		<form id="customize">
+			<input type="color" value="#e53232">
+			<button>Download</button>
+		</form>
+	</div>
+	<a id="download"></a>
+	<script src="script.js"></script>
 </body>
 </html>
