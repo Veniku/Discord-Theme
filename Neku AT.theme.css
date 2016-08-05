@@ -307,14 +307,15 @@ form .Select.is-open .Select-control:hover {
     animation: pulse .38s infinite;
 }
 .form .btn-default {
-    background-color: #111;
+    background-color: #1c1c1c;
     color: rgba(255, 255, 255, .8);
-    border-bottom: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    border-bottom: 0px solid #949494;
 }
 .form .btn-default:hover {
-    background-color: #111;
-    border-bottom: none;
-    animation: pulse .36s infinite;
+    animation: pulse .38s infinite;
+    border-bottom: 0px solid #949494;
 }
 .form .btn-primary {
     background-color: #1c1c1c;
