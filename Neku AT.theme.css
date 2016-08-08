@@ -1,4 +1,4 @@
-﻿//META{"name":"Neku AT Theme","description":"A Theme based off a site called twist.moe","author":"Neku","version":"0.0.1"}*//{}
+//META{"name":"Neku AT Theme","description":"A Theme based off a site called twist.moe","author":"Neku","version":"0.0.1"}*//{}
 @font-face {
     font-family: 'Lato';
     font-style: normal;
@@ -28,6 +28,26 @@ body {
 @keyframes pulse-opacity {
     50% {
         opacity: 1;
+    }
+}
+@keyframes wiggle {
+    from {
+        -webkit-transform: rotate(-7deg);
+        transform: rotate(-7deg);
+    }
+    to {
+        -webkit-transform: rotate(7deg);
+        transform: rotate(7deg);
+    }
+}
+@keyframes wiggle-active {
+    from {
+        -webkit-transform: scale(.9) rotate(-7deg);
+        transform: scale(.9) rotate(-7deg);
+    }
+    to {
+        -webkit-transform: scale(.9) rotate(7deg);
+        transform: scale(.9) rotate(7deg);
     }
 }
 a:hover,
@@ -473,6 +493,12 @@ form .Select.is-open .Select-control:hover {
 #permissions .permissions-helpdesk:hover {
     color: rgba(255,255,255,.5);
 }
+.settings .settings-inner .settings-panel-with-header {
+    padding: 0px 26px 28px 40px;
+}
+.instant-invites .instant-invites-list .instant-invite+.instant-invite {
+    border-top: 1px solid rgba(255,255,255,.05);
+}
 /* Voice Channels */
 
 .guild-channels .channel-voice.audio a {
@@ -525,9 +551,6 @@ form .Select.is-open .Select-control:hover {
 .guild-channels .channel-voice-states li:hover {
     color: rgba(255, 255, 255, .5);
     animation: pulse .38s infinite;
-}
-.guild-channels .channel {
-    text-transform: lowercase;
 }
 /* Voice Channel Avatars */
 
@@ -661,6 +684,14 @@ form .Select.is-open .Select-control:hover {
 }
 .user-popout .footer .quick-message-wrapper .input.isBlocked {
     background: #1c1c1c;
+}
+/* note */
+.user-popout .body .notes textarea:focus {
+    background: #111;
+}
+.user-popout .body .notes textarea {
+	
+    color: rgba(255,255,255,.8);
 }
 /*/////////*/
 /* Profile */
@@ -849,6 +880,11 @@ form .Select.is-open .Select-control:hover {
 #voice-connection .btn-disconnect:after {
     background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_call_end_white_24px.svg);
     zoom: 1.3;
+}
+#voice-connection .btn-disconnect:hover:after {
+    -webkit-animation: wiggle 70ms infinite alternate;
+    animation: wiggle 70ms infinite alternate;
+    z-index: 1;
 }
 /* acount bar */
 
@@ -1089,6 +1125,66 @@ code {
 .theme-dark .message-group a {
     color: #e53232;
 }
+
+/* Upload */
+.upload-modal {
+    background-color: #111;
+}
+.upload-modal .inner {
+    border: 0px dashed #aab8e8;
+    color: rgba(255,255,255,.8);
+}
+.upload-modal .inner .comment .label .optional {
+    opacity: .5;
+}
+.upload-modal .inner .file .icon.image {
+    border: 2px solid #1c1c1c;
+}
+.upload-modal .footer {
+    border-radius: 0 0 10px 10px;
+    background-color: #111;
+}
+.upload-modal .footer .button-primary {
+    color: rgba(255,255,255,.8);
+    background-color: #1c1c1c;
+}
+.upload-modal .footer .button {
+    margin-left: 8px;
+    background-color: #1c1c1c;
+}
+button {
+    font-family: lato;
+    color: rgba(255,255,255,.8);
+}
+.upload-modal .inner .comment .channel-textarea .channel-textarea-inner {
+    border-color: #1c1c1c;
+    background-color: #1c1c1c;
+}
+.channel-textarea-autocomplete-inner {
+    border: 2px solid #1c1c1c;
+    background: #1c1c1c;
+}
+.channel-textarea-autocomplete-inner:after {
+    border-bottom: 1px solid #1c1c1c;
+}
+.channel-textarea-autocomplete-inner header {
+    border-bottom: 1px solid #1c1c1c;
+    color: #e53232;
+    background: #1c1c1c;
+}
+.channel-textarea-autocomplete-inner ul li.active {
+    background: #1c1c1c;
+    padding-left: 12px;
+}
+.channel-textarea-autocomplete-inner ul li {
+    color: rgba(255,255,255,.8);
+}
+.channel-textarea-autocomplete-inner ul li.active {
+    padding-left: 8px;
+    border-left: 2px solid #e53232;
+    animation: pulse .38s infinite;
+}
+
 /* title bar */
 
 .theme-dark .chat .title-wrap {
